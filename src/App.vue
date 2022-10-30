@@ -5,14 +5,11 @@ import Nav from "./components/Nav/index.vue";
 import Footer from "./components/Footer/index.vue";
 import BackTop from "./components/BackTop/index.vue";
 
-import {ref} from 'vue'
-const container = ref()
-console.log(container);
 
 </script>
 
 <template>
-  <el-container ref="container">
+  <el-container>
     <el-header><Nav /></el-header>
     <el-main>
       <div class="main" >

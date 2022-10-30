@@ -21,10 +21,7 @@
       >
         学好课
       </div>
-      <div
-        @click="goToLaboratory('nav')"
-        class="scroll-item hover-class"
-      >
+      <div @click="goToLaboratory('nav')" class="scroll-item hover-class">
         回顶部
       </div>
     </div>
@@ -33,14 +30,6 @@
 <script lang="ts" setup>
 import { onMounted, ref } from "vue";
 
-const props = defineProps({
-  container: {
-    type: Object,
-    default: "",
-  },
-});
-console.log(props.container);
-
 onMounted(() => {
   window.addEventListener("scroll", scrollTop, true);
 });
@@ -48,16 +37,13 @@ const scrollValue = ref(0);
 // 实时滚动条高度
 const scrollTop = () => {
   let scroll = document.documentElement.scrollTop || document.body.scrollTop;
-  console.log(scroll);
   scrollValue.value = scroll;
 };
 
 const goToLaboratory = (anchorName: string) => {
-  console.log(document.getElementById(anchorName));
   let anchorElement = document.getElementById(anchorName);
   if (anchorElement) {
     anchorElement.scrollIntoView({ block: "start", behavior: "smooth" });
-    console.log("anchorElement", anchorElement.getAttribute);
   }
 };
 </script>
