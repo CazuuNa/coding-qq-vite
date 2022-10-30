@@ -26,10 +26,7 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -60,11 +57,14 @@ button:focus-visible {
   padding: 2em;
 }
 
+ul, ol, li {
+  list-style: none;
+  padding: none;
+  margin:none;
+}
+
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: light) {
@@ -73,9 +73,14 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #009cff;
   }
   button {
     background-color: #f9f9f9;
   }
+}
+
+.hover-class:hover {
+  cursor: pointer;
+  color: #009cff;
 }

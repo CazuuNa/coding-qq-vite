@@ -1,0 +1,23 @@
+{
+  "id": "3738619",
+  "name": "ns",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "563533",
+      "name": "hot",
+      "font_class": "hot",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "629337",
+      "name": "声音",
+      "font_class": "shengyin",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    }
+  ]
+}

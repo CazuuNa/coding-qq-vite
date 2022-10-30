@@ -1,31 +1,47 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import Nav from "./components/Nav/index.vue";
+import Footer from "./components/Footer/index.vue";
+import BackTop from "./components/BackTop/index.vue";
+
+import {ref} from 'vue'
+const container = ref()
+console.log(container);
+
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <el-container ref="container">
+    <el-header><Nav /></el-header>
+    <el-main>
+      <div class="main" >
+        <div class="main-view">
+          <router-view></router-view>
+        </div>
+      </div>
+    </el-main>
+    <el-footer><Footer /> </el-footer>
+  </el-container>
+  <BackTop :container='container'/>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+
+<style lang="scss">
+.el-header,
+.el-footer {
+  height: 60px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.el-main {
+  width: 100%;
+  padding: 0 !important;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.main {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  .main-view {
+    flex: 1;
+  }
 }
 </style>
