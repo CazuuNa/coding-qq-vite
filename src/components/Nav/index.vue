@@ -13,15 +13,18 @@
     </div>
     <div class="root-head-menu"><MenuTree /></div>
     <el-space class="root-head-btn" :size="20">
-      <el-dropdown popper-class="pop">
+      <el-dropdown popper-class="pop" >
         <div class="root-head-btn-create">立即创作</div>
         <template #dropdown>
           <el-dropdown-menu>
-            <el-dropdown-item><span style="display: block; width:120px;height: 30px; font-size: 16px;">创意实验室</span></el-dropdown-item>
-            <el-dropdown-item><span style="display: block; width:120px;height: 30px; font-size: 16px;">创意实验室</span></el-dropdown-item>
-            <el-dropdown-item><span style="display: block; width:120px;height: 30px; font-size: 16px;">创意实验室</span></el-dropdown-item>
-            <el-dropdown-item><span style="display: block; width:120px;height: 30px; font-size: 16px;">创意实验室</span></el-dropdown-item>
-            <el-dropdown-item><span style="display: block; width:120px;height: 30px; font-size: 16px;">创意实验室</span></el-dropdown-item>
+            <el-dropdown-item><span style="display: flex; width:120px;height: 30px; font-size: 16px;align-items: center;justify-content: center;">创意实验室</span></el-dropdown-item>
+            <el-dropdown-item><span style="display: flex; width:120px;height: 30px; font-size: 16px;align-items: center;justify-content: center;">Python实验室</span></el-dropdown-item>
+            <el-dropdown-item><span style="display: flex; width:120px;height: 30px; font-size: 16px;align-items: center;justify-content: center;">编程第一课</span></el-dropdown-item>
+            <el-dropdown-item><span style="display: flex; width:120px;height: 30px; font-size: 16px;align-items: center;justify-content: center;">3D实验室</span></el-dropdown-item>
+            <el-dropdown-item><span style="display: flex; width:120px;height: 30px; font-size: 16px;align-items: center;justify-content: center;">人工智能实验室</span></el-dropdown-item>
+            <el-dropdown-item><span style="display: flex; width:120px;height: 30px; font-size: 16px;align-items: center;justify-content: center;">游戏实验室</span></el-dropdown-item>
+            <el-dropdown-item><span style="display: flex; width:120px;height: 30px; font-size: 16px;align-items: center;justify-content: center;">艺术(p5)实验室</span></el-dropdown-item>
+            <el-dropdown-item><span style="display: flex; width:120px;height: 30px; font-size: 16px;align-items: center;justify-content: center;">人工智能实验室</span></el-dropdown-item>
           </el-dropdown-menu>
         </template>
       </el-dropdown>

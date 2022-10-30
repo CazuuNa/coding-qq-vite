@@ -20,7 +20,7 @@ import BackTop from "./components/BackTop/index.vue";
     </el-main>
     <el-footer><Footer /> </el-footer>
   </el-container>
-  <BackTop :container='container'/>
+  <BackTop />
 </template>
 
 
